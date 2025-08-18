@@ -69,7 +69,7 @@ const products: Product[] = [
   },
   {
     id: "v3",
-    name: "Piyoz",
+    name: "Piyozlar",
     category: "sabzavotlar",
     image: "/images/piyoz.png",
     unit: "kg",
