@@ -545,12 +545,12 @@ export default function ShoppingPlatform() {
               <Button
                 variant={currentView === "basket" ? "default" : "outline"}
                 onClick={() => setCurrentView("basket")}
-                className="relative"
+                className="relative  "
               >
-                <ShoppingCart className="h-4 w-4 mr-2" />
+                <ShoppingCart className=" h-4 w-4 mr-2" />
                 Savat
                 {shoppingList && shoppingList.items.length > 0 && (
-                  <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs">
+                  <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center  justify-center text-xs">
                     {shoppingList.items.length}
                   </Badge>
                 )}
@@ -584,8 +584,8 @@ export default function ShoppingPlatform() {
                     </p>
                   </div>
                 </div>
-                <Button onClick={() => setShowStartDialog(true)} className="bg-green-600 hover:bg-green-700 text-white">
-                  🛒 Bozorlik
+                <Button onClick={() => setShowStartDialog(true)} className="bg-[#09bcbf]  hover:bg-[#000000] text-white">
+                Ro‘yxat yaratish
                 </Button>
               </div>
             </div>
@@ -713,7 +713,7 @@ export default function ShoppingPlatform() {
                 <p className="text-gray-600">Bozorlik ro'yxatingizga qo'shish uchun mahsulotni bosing</p>
               </div>
               <Button variant="outline" onClick={() => setCurrentView("categories")}>
-                Turkumlarga qaytish
+              Mahsulotlarga qaytish
               </Button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -761,7 +761,7 @@ export default function ShoppingPlatform() {
                   <ShoppingCart className="h-16 w-16 mx-auto text-gray-400 mb-4" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Savatingiz bo'sh</h3>
                   <p className="text-gray-600 mb-4">Bozorlik ro'yxatingizga mahsulot qo'shishni boshlang</p>
-                  <Button onClick={() => setCurrentView("categories")}>Turkumlarni ko'rish</Button>
+                  <Button className="bg-[#09bcbf]" onClick={() => setCurrentView("categories")}>Mahsulotlarni ko'rish</Button>
                 </CardContent>
               </Card>
             ) : (
@@ -810,10 +810,10 @@ export default function ShoppingPlatform() {
                             <Button
                               size="sm"
                               onClick={() => handleMarkAsPurchased(item)}
-                              className="bg-blue-600 hover:bg-blue-700"
+                              className="bg-[#ff3131] hover:bg-[#09bcbf]"
                             >
                               <Edit3 className="h-3 w-3 mr-1" />
-                              Sotib olindi deb belgilash
+                              Sotib olish
                             </Button>
                           )}
                           <Button size="sm" variant="outline" onClick={() => handleRemoveItem(item.id)}>
@@ -829,15 +829,15 @@ export default function ShoppingPlatform() {
                     onClick={() => setShowExtraProductDialog(true)}
                     className="w-full py-3 text-lg bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 border-0"
                   >
-                    ➕ Qo'shimcha mahsulot qo'shish
+                   Mahsulot qo'shish
                   </Button>
                 </div>
                 <div className="mt-4 mb-4">
                   <Button
                     onClick={handleShareList}
-                    className="w-full py-3 text-lg bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 border-0"
+                    className="w-full py-3 text-lg bg-[#09bcbf] from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 border-0"
                   >
-                    📤 Ro'yxatni ulashish
+                    Ro'yxatni ulashish
                   </Button>
                 </div>
                 <Separator />
@@ -901,7 +901,7 @@ export default function ShoppingPlatform() {
                   <div className="text-4xl mb-4">📋</div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Hali tarix yo'q</h3>
                   <p className="text-gray-600 mb-4">Birinchi bozorlikni yakunlang</p>
-                  <Button onClick={() => setCurrentView("categories")}>Bozorlik boshlash</Button>
+                  <Button className=" bg-[#09bcbf] " onClick={() => setCurrentView("categories")}>Bozorlik boshlash</Button>
                 </CardContent>
               </Card>
             ) : (
